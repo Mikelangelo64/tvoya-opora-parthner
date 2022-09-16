@@ -61,6 +61,19 @@
                     <button class="nav-search-btn" type="submit">Пошук</button>
                 </div>
             </form>
+            <form class="nav-subscribe" method="get" action="">
+                <div class="nav-search-box">
+                    <div class="nav-search-query">
+                        <input type="text" name="q" placeholder="email">
+                    </div>
+
+                    <button class="nav-search-btn" type="submit">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.827341 1.30631L7.19141 7.67017L0.827341 14.034" stroke="#fff" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
         <div class="dropdown-nav-menu"><ul class="two-nav-list">
     <li class="two-nav-item hover-active">
@@ -210,7 +223,22 @@
 </div>
 
 </div>
-<section class="container">
+
+<section class="container container__small container__breadcrumbs">
+    <nav class="yoast-breadcrumbs breadcrumbs">
+        <span>
+            <span>
+                <a href="№">Головна</a>
+                 / 
+                <span class="breadcrumb_last" aria-current="page">
+                    Партнери
+                </span>
+            </span>
+        </span>
+    </nav>
+</section>
+
+<section class="container container__small">
     <div class="banner-gradient rounded banner-gradient__parthner">
         <div class="banner-gradient__img">
             <img src="./img/content/top-project/0-1270x735.jpg" alt="">
@@ -730,6 +758,14 @@
                         </span>
                     </div>
     
+                    <div>
+                        <strong>
+                            <input type="text" name="company" placeholder="Назва компанії *">
+                            <em>**error</em>
+                        </strong>
+                        
+                    </div>
+
                     <div>
                         <strong>
                             <textarea name="comment" placeholder="Коментар"></textarea>
